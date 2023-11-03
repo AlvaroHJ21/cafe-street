@@ -2,7 +2,32 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+@layer components {
+  .container {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .active {
+    @apply text-primary;
+  }
+  .text-underline {
+    display: inline-block;
+  }
+  .text-underline::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: #ff902a;
+  }
+  .clip {
+    clip-path: polygon(0 0, 100% 20%, 100% 100%, 0% 100%);
+  }
+}
+
+/* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
@@ -24,4 +49,4 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
-}
+} */
