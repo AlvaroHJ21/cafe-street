@@ -1,10 +1,11 @@
 import { Button } from '@/components/atoms';
 import Image from 'next/image';
+import Icon from '../atoms/icon';
 
 export default function Hero() {
   return (
     <section className="bg-background relative">
-      <div className="container flex items-center h-screen lg:h-[80vh] relative z-10">
+      <div className="container flex items-center h-screen lg:h-[100vh] relative z-10">
         <div className="flex-1">
           <div className="flex flex-col gap-6 items-start">
             <h1 className="text-5xl font-semibold">
@@ -16,7 +17,9 @@ export default function Hero() {
             <div className="flex gap-4">
               <Button>
                 Order now
-                <div className="w-6 h-6 rounded-full bg-primary"></div>
+                <div className="w-6 h-6 rounded-full bg-primary grid place-content-center">
+                  <Icon icon="shopping-cart" size={16} />
+                </div>
               </Button>
               <Button variant="text">More menu</Button>
             </div>
@@ -31,14 +34,14 @@ export default function Hero() {
         alt="caffes"
         width={600}
         height={400}
-        className="absolute top-0 right-0 w-1/2 md:w-1/3 lg:w-1/4"
+        className="absolute z-0 top-0 right-0 w-1/2 md:w-1/3 lg:w-1/3 max-w-lg"
       />
       <Image
-        src="/bg_img_hero.png"
+        src="/bg_img_hero_bottom.png"
         alt="caffes"
         width={600}
         height={400}
-        className="absolute -bottom-20 left-0 w-1/2 md:w-1/3 lg:w-1/4 rotate-180"
+        className="absolute z-0 -bottom-40 left-0 w-1/2 md:w-1/3 lg:w-1/3 max-w-lg"
       />
     </section>
   );
