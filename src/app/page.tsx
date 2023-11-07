@@ -1,5 +1,4 @@
-import { Hero } from '@/components/organisms';
-import { PopularProducts, DeliverySection } from '@/components/organisms';
+import { AboutUsSection, Hero, PopularProducts, DeliverySection } from '@/components/organisms';
 
 export default function Home() {
   return (
@@ -7,6 +6,7 @@ export default function Home() {
       <Hero />
       <PopularProducts />
       <DeliverySection />
+      <AboutUsSection />
     </>
   );
 }
