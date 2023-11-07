@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  h2 {
+    @apply text-3xl font-semibold;
+  }
+}
+
 @layer components {
   .container {
     max-width: 1200px;
@@ -12,9 +18,11 @@
   .active {
     @apply text-primary;
   }
+
   .text-underline {
     display: inline-block;
   }
+
   .text-underline::after {
     content: '';
     display: block;
@@ -22,6 +30,7 @@
     height: 4px;
     background-color: #ff902a;
   }
+
   .clip {
     clip-path: polygon(0 0, 100% 20%, 100% 100%, 0% 100%);
   }
