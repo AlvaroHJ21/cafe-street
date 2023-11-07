@@ -2,6 +2,7 @@ import {
   AboutUsSection,
   DeliverySection,
   Hero,
+  NewsLetterSection,
   PopularProducts,
   SpecialMenuSection,
   TestimonialSection,
@@ -17,6 +18,7 @@ export default function Home() {
       <AboutUsSection />
       <SpecialMenuSection products={specialProducts} />
       <TestimonialSection testimonials={testimonials} />
+      <NewsLetterSection />
     </>
   );
 }
