@@ -26,17 +26,17 @@ export default function Hero() {
           </div>
         </div>
         <div className="flex-1 hidden md:block">
-          <Image src="/hero.png" width={500} height={500} alt="Hero image" />
+          <img src="/hero.png" width={500} height={500} alt="Hero image" />
         </div>
       </div>
-      <Image
+      <img
         src="/bg_img_hero.png"
         alt="caffes"
         width={600}
         height={400}
         className="absolute z-0 top-0 right-0 w-1/2 md:w-1/3 lg:w-1/3 max-w-lg"
       />
-      <Image
+      <img
         src="/bg_img_hero_bottom.png"
         alt="caffes"
         width={600}
