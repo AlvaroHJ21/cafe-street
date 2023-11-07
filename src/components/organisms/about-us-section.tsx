@@ -26,8 +26,8 @@ export default function AboutUsSection() {
           </div>
         </div>
       </div>
-      <div className='absolute top-0 z-0 w-full'>
-        <img src="/about-us-bg.png" alt="" className="w-full" />
+      <div className='absolute top-0 z-0 w-full h-full'>
+        <img src="/about-us-bg.png" alt="" className="w-full h-full object-cover" />
       </div>
     </section>
   );
