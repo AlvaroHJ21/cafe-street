@@ -14,7 +14,7 @@ export default function SpecialMenuSection(props: Props) {
         <h2 className="mb-8">
           Special menu <span className="text-underline">for you</span>
         </h2>
-        <div className="grid grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-3 gap-8">
           {products.map((product) => (
             <ProductCard key={product.name} product={product} showDescription/>
           ))}

@@ -5,7 +5,7 @@ export default function AboutUsSection() {
   return (
     <section className='relative mt-16'>
       <div className="flex container relative z-10">
-        <div className="flex-1">
+        <div className="flex-1 hidden md:block">
           <div className="bg-white bg-opacity-40 backdrop-blur-sm rounded-xl p-2 shadow-lg w-fit m-auto relative -top-16">
             <img src="/about-us.png" alt="" />
           </div>

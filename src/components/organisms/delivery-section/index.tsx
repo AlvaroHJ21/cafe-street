@@ -8,7 +8,7 @@ export default function DeliverySection() {
         <h2 className="mb-8">
           How to use delivery <span className="text-underline">service</span>
         </h2>
-        <div className="flex justify-between">
+        <div className="flex flex-col md:flex-row justify-between">
           <Item
             image="/delivery-1.png"
             title="choose your coffee"
